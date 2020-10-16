@@ -1,0 +1,21 @@
+{
+  "name": "expomeli-api",
+  "version": "1.0.0",
+  "description": "BFF for searching products with MercadoLibre's API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r esm app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Vailanti",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
