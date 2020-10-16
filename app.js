@@ -3,6 +3,8 @@ import helmet from 'helmet'
 import itemsRouter from './routes/items'
 // import bodyParser from 'body-parser'
 
+const port = process.env.PORT || 3000
+
 const app = express()
 
 const setHeaders = (_, res, next) => {
@@ -17,4 +19,4 @@ app.use(setHeaders)
 app.use(helmet())
 app.use('/api', itemsRouter)
 
-app.listen(process.env.PORT || 8000)
+app.listen(port)
