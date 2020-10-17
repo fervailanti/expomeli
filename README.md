@@ -17,13 +17,9 @@ Has communication with the following MercadoLibre APIs:
 
 In the project directory, you can run:
 
-##### `yarn start:dev`
+- `yarn start:dev`: Starts the server in watch mode with `nodemon` and `esm` (ES Modules) at [http://localhost:8000](http://localhost:8000).
 
-Starts the server in watch mode with `nodemon` and `esm` (ES Modules) at [http://localhost:8000](http://localhost:8000).
-
-##### `yarn start:prod`
-
-Used for start the server in heroku with `esm` (ES Modules) at production domain.
+- `yarn start:prod`: Used for start the server in heroku with `esm` (ES Modules) at production domain.
 
 ## Deployment
 
