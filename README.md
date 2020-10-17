@@ -1,3 +1,3 @@
 # Expo Meli API
 
-BFF for searching products with MercadoLibre's API 🔍
+BFF (Backend For Frontend) for searching products with MercadoLibre's API 🔍

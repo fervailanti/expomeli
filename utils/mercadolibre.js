@@ -1,7 +1,13 @@
 import axios from 'axios'
 
+const meli = axios.create({
+  baseURL: 'https://api.mercadolibre.com'
+})
+
 const mercadolibre = {
-  searchResultsByQuery: (q) => axios.get(`https://api.mercadolibre.com/sites/MLA/search?q=${q}`)
+  getItemsByQuery: (q) => meli.get(`/sites/MLA/search?q=${q}`),
+  getItemSummaryById: (id) => meli.get(`/items/${id}`),
+  getItemDescriptionById: (id) => meli.get(`/items/${id}/description`)
 }
 
 export default mercadolibre
