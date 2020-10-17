@@ -1,15 +1,16 @@
 import mercadolibre from '../utils/mercadolibre'
-import { autor, createFullItem, createItemsList } from '../utils/helpers'
+import { autor, createBreadcrumb, createFullItem, createItemsList } from '../utils/helpers'
 
 export const getItemsByQuery = (req, res) => {
   const { q } = req.query
   mercadolibre
     .getItemsByQuery(q)
     .then(({ data }) => {
+      const { filters, results } = data
       return res.status(200).json({
         autor,
-        categories: [],
-        items: createItemsList(data.results)
+        categories: createBreadcrumb(filters),
+        items: createItemsList(results)
       })
     })
     .catch((error) => {
