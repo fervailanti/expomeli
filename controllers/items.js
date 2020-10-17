@@ -1,5 +1,5 @@
 import mercadolibre from '../utils/mercadolibre'
-import { autor, createBreadcrumb, createFullItem, createItemsList } from '../utils/helpers'
+import { autor, createBreadcrumb, createFullItem, createItemsList } from '../utils/creators'
 
 export const getItemsByQuery = (req, res) => {
   const { q } = req.query

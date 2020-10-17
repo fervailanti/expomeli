@@ -5,13 +5,25 @@ Online at https://expomeli.herokuapp.com/.
 
 ## Stack
 
-The project is builded primarily with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/), plus [ES Modules](https://github.com/standard-things/esm#readme) and [Axios](https://github.com/axios/axios). 
+The project is builded primarily with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/), plus [ES Modules](https://github.com/standard-things/esm#readme) and [Axios](https://github.com/axios/axios).
 
 Has communication with the following MercadoLibre APIs:
 
 - https://api.mercadolibre.com/sites/MLA/search?q=:query.
 - https://api.mercadolibre.com/items/:id.
 - https://api.mercadolibre.com/items/:id/description.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+##### `yarn start:dev`
+
+Starts the server in watch mode with `nodemon` and `esm` (ES Modules) at [http://localhost:8000](http://localhost:8000).
+
+##### `yarn start:prod`
+
+Used for start the server in heroku with `esm` (ES Modules) at production domain.
 
 ## Deployment
 
@@ -29,7 +41,7 @@ Used for get a list of results items (products) from a search query. The `items`
 
 #### Response:
 
-`````
+```
 {
   "author": {
     "name": String
@@ -54,7 +66,8 @@ Used for get a list of results items (products) from a search query. The `items`
     {...}
   ]
 }
-``````
+```
+
 <br />
 
 ### `/api/items/:id`
@@ -63,7 +76,7 @@ Used for get a specific item (product) details by `id`.
 
 #### Response:
 
-`````
+```
 {
   "autor": {
     "name": String,
@@ -84,4 +97,4 @@ Used for get a specific item (product) details by `id`.
     "description": String
   }
 }
-``````
+```

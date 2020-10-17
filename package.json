@@ -1,7 +1,7 @@
 {
   "name": "expomeli-api",
   "version": "1.0.0",
-  "description": "BFF for searching products with MercadoLibre's API",
+  "description": "API for searching products with MercadoLibre's API",
   "main": "app.js",
   "engines": {
     "node": "14.13.1"
