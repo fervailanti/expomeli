@@ -5,7 +5,7 @@ Online at https://expomeli.herokuapp.com/.
 
 ## Stack
 
-The project is builded primarily with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/), plus [ES Modules](https://github.com/standard-things/esm#readme) and [Axios](https://github.com/axios/axios).
+The project is builded primarily with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/), plus [ES Modules](https://github.com/standard-things/esm#readme), [Axios](https://github.com/axios/axios), [Jest](https://jestjs.io/) and [SuperTest](https://github.com/visionmedia/supertest).
 
 Has communication with the following MercadoLibre APIs:
 
