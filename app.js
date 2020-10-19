@@ -14,7 +14,9 @@ const setHeaders = (_, res, next) => {
 }
 
 app.use(setHeaders)
+
 app.use(helmet())
+
 app.use('/api', itemsRouter)
 
-app.listen(port)
+app.listen(port, () => console.log(`Listening on port ${port}`))

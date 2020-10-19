@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { MERCADOLIBRE_API_BASEURL } from './constants'
 
 const meli = axios.create({
-  baseURL: 'https://api.mercadolibre.com'
+  baseURL: MERCADOLIBRE_API_BASEURL
 })
 
 const mercadolibre = {

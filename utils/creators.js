@@ -1,5 +1,3 @@
-export const autor = { name: 'Fernando', lastname: 'Vailanti' }
-
 const splitPrice = (price) =>
   price
     .toFixed(2)
