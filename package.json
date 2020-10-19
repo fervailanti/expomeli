@@ -11,9 +11,9 @@
     "url": "https://github.com/fervailanti/expomeli-api"
   },
   "scripts": {
-    "start:dev": "nodemon -r esm app.js",
-    "start:prod": "node -r esm app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon -r esm start.js",
+    "start:prod": "node -r esm start.js",
+    "test": "jest"
   },
   "author": "Fernando Vailanti",
   "license": "ISC",
@@ -24,6 +24,16 @@
     "helmet": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.5"
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.5.2",
+    "jest": "^26.5.3",
+    "nodemon": "^2.0.5",
+    "supertest": "^5.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }

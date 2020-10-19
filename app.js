@@ -2,8 +2,6 @@ import express from 'express'
 import helmet from 'helmet'
 import itemsRouter from './routes/items'
 
-const port = process.env.PORT || 8000
-
 const app = express()
 
 const setHeaders = (_, res, next) => {
@@ -19,4 +17,4 @@ app.use(helmet())
 
 app.use('/api', itemsRouter)
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+export default app
